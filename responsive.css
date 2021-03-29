@@ -3,7 +3,7 @@
   .top-wrapper h1 {
     font-size: 32px;
   }
-  
+
   .heading h2 {
     font-size: 20px;
   }
@@ -26,8 +26,32 @@
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+  .header-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-right ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  .header-right ul a {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    background-color: rgba(34, 49, 52, 0.9);
+    padding: 0 auto;
+  }
+
   .menu-icon {
     display: block;
+  }
+
+  #menuToggle:checked ~ ul {
+    max-height: 350px;
   }
 
   .top-wrapper {
@@ -43,15 +67,11 @@
     font-size: 14px;
     line-height: 20px;
   }
-  
-  .header-right {
-    display: none;
-  }
 
   .categories {
     flex-direction: column;
   }
-  
+
   .categories li {
     margin: 2px auto;
     width: 90%;
