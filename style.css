@@ -18,7 +18,6 @@ a {
   text-decoration: none;
 }
 
-
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -68,9 +67,42 @@ header {
   margin-top: 10px;
 }
 
+
 .header-right {
+  height: 100%;
   float: right;
-  margin-right: -25px;
+  display: block;
+}
+.header-right ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;             
+}
+.header-right ul a {
+  height: inherit;
+  color: #222;
+  display: inline-block;
+}
+.header-right ul a:hover {
+  background-color: #222;
+  color: #fff;
+}
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  width: 100px;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 65px;
+  text-align: center;
 }
 
 .header-right a {
@@ -173,12 +205,9 @@ li .sneakers {
   background-size: cover;
 }
 
-
-
 .message-wrapper h3 {
   padding-bottom: 15px;
 }
-
 
 .card-item {
   display: flex;
